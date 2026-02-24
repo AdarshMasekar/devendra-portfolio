@@ -71,7 +71,7 @@ export const Contact = () => {
 
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 w-full max-w-3xl">
             <a
-              href="mailto:devendra.lamani@example.com"
+              href="mailto:devendralamani2001@gmail.com"
               className="group relative overflow-hidden rounded-[2rem] bg-accent text-primary px-8 py-5 flex items-center gap-3 transition-transform duration-300 hover:scale-[1.03] w-full md:w-auto flex-1 justify-center"
             >
               <span className="relative z-10 font-data text-sm tracking-widest uppercase transition-colors duration-300 group-hover:text-dark">
@@ -95,7 +95,7 @@ export const Contact = () => {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/Devu1234567"
               target="_blank"
               rel="noreferrer"
               className="group relative overflow-hidden rounded-[2rem] bg-primary/10 border border-primary/20 text-primary px-8 py-5 flex items-center justify-center gap-3 transition-transform duration-300 hover:scale-[1.03] w-full md:w-auto flex-1"
