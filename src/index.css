@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-dark;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-dark {
+    @apply bg-dark/80 backdrop-blur-md border border-white/10;
+  }
+
+  /* Magnetic button hover style with sliding background */
+  .btn-magnetic {
+    @apply relative overflow-hidden transition-transform duration-300 ease-[cubic-bezier(0.25,0.46,0.45,0.94)] hover:scale-105;
+  }
+
+  .btn-magnetic::before {
+    content: "";
+    @apply absolute inset-0 bg-dark transform scale-x-0 origin-left transition-transform duration-500 z-0;
+  }
+
+  .btn-magnetic:hover::before {
+    @apply scale-x-100;
+  }
+
+  .btn-magnetic > * {
+    @apply relative z-10 transition-colors duration-300;
+  }
+
+  .btn-magnetic:hover > * {
+    @apply text-white;
+  }
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
